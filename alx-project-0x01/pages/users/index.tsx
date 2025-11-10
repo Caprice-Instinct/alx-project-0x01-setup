@@ -2,7 +2,7 @@ import UserCard from "@/components/common/UserCard";
 import Header from "@/components/layout/Header";
 import { UserProps } from "@/interfaces";
 
-const User: React.FC<UserProps[]> = ({ posts }) => {
+const Users: React.FC<UserProps[]> = ({ posts }) => {
   return (
     <div className="flex flex-col h-screen">
       <Header />
@@ -54,4 +54,4 @@ export async function getStaticProps() {
     },
   };
 }
-export default User;
+export default Users;
