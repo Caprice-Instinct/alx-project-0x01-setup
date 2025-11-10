@@ -12,7 +12,7 @@ const Users: React.FC<UserProps[]> = ({ posts }) => {
           <button className=" text-2xl font-semibold">Add user</button>
         </div>
         <div className="grid grid-cols-3 gap-2">
-          {posts?.map(
+          {posts.map(
             (
               {
                 id,
