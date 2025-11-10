@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+alx-project-0x01/node_modules/
+
+# Build outputs
+alx-project-0x01/.next/
+alx-project-0x01/out/
+alx-project-0x01/build/
+
+# Environment files
+.env*
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# TypeScript
+*.tsbuildinfo
