@@ -5,7 +5,7 @@ import { PostData, PostProps } from "@/interfaces";
 import { useState } from "react";
 
 const Posts: React.FC<PostProps[]> = ({ posts }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalOpen, setModalOpen] = useState(false);
   const [post, setPost] = useState<PostData | null>(null);
 
   const handleAddPost = (newPost: PostData) => {
@@ -18,7 +18,7 @@ const Posts: React.FC<PostProps[]> = ({ posts }) => {
         <div className="flex justify-between">
           <h1 className=" text-2xl font-semibold">Post Content</h1>
           <button
-            onClick={setIsModalOpen(true)}
+            onClick={setModalOpen(true)}
             className="bg-blue-700 px-4 py-2 rounded-full text-white"
           >
             Add Post
@@ -38,7 +38,7 @@ const Posts: React.FC<PostProps[]> = ({ posts }) => {
       </main>
       {isModalOpen && (
         <PostModal
-          onClose={() => setIsModalOpen(false)}
+          onClose={() => setModalOpen(false)}
           onSubmit={handleAddPost}
         />
       )}
